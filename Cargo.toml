@@ -5,7 +5,6 @@ authors = ["ZGQ <2175318066@qq.com>"]
 edition = "2018"
 description = "message bus "
 license = "MIT"
-repository = "https://gitee.com/21753/zdoor-alita"
 readme = "README.md"
 keywords = ["NAT", "reverse", "proxy"]
 categories = ["git"]
