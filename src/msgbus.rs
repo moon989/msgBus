@@ -44,8 +44,6 @@ pub struct MsgBus<TMSGDATA> {
 // 实现消息Bus
 impl<TMSGDATA: Send + Clone + Sync + std::fmt::Debug+'static> MsgBus<TMSGDATA> {
     pub fn new() -> MsgBus<TMSGDATA>
-    where
-        TMSGDATA: 'static,
     {
         let (tx, rx) = mpsc::channel::<Message<TMSGDATA>>(10);
         let rx = Arc::new(RwLock::new(rx));
